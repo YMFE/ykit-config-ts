@@ -24,6 +24,8 @@
     "babel-preset-es2017": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "extend": "^3.0.0",
+    "fs-extra": "^4.0.1",
+    "simple-git": "^1.77.0",
     "ts-loader": "^2.3.4",
     "typescript": "^2.5.2"
   },

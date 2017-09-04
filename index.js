@@ -41,6 +41,11 @@ exports.config = function (options, cwd) {
         }
     });
 
-    baseConfig.entryExtNames.js.push('.ts', '.tsx')
-    baseConfig.resolve.extensions.push('.ts', '.tsx')
+    baseConfig.entryExtNames.js.push('.ts', '.tsx');
+    baseConfig.resolve.extensions.push('.ts', '.tsx');
+
+    this.commands.push({
+        name: 'setup',
+        module: require('./commands/setup.js')
+    });
 };
