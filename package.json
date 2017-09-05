@@ -1,6 +1,6 @@
 {
   "name": "ykit-config-ts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "ykit ts 配置和脚手架",
   "main": "index.js",
   "scripts": {
