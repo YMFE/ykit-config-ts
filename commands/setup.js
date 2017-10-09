@@ -11,7 +11,7 @@ exports.setOptions = function(optimist) {
 
 exports.run = function(options) {
     var cwd = process.cwd();
-    var repoURL = 'git@github.com:roscoe054/ykit-starter-ts.git';
+    var repoURL = 'https://github.com/roscoe054/ykit-starter-ts.git';
     var tmpRepo = path.join(cwd, '.ykit/');
 
     fs.mkdirSync(tmpRepo);
@@ -21,6 +21,7 @@ exports.run = function(options) {
         copy('/src/');
         copy('/index.html');
         copy('/ykit.js');
+        copy('/tsconfig.json');
         copy('/.gitignore');
 
         fs.removeSync(tmpRepo);
